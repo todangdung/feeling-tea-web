@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* change arrow size, color for swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important;
+  color: #f68423;
+  font-weight: 900;
+}
+
+/* change dot color for swiper */
+.swiper-pagination-bullet-active {
+  background: #f68423 !important;
+  font-weight: 900;
+}
+
+.swiper-wrapper li:last-of-type {
+  margin-right: -20px;
+}
+
+.datePicker {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  width: 0;
+  position: absolute;
+  display: none;
+}
